@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.Arrays;
+class GFG
+{
+static int findMaxNum(int arr[],int n)
+{
+Arrays.sort(arr);
+int num=arr[0];
+for(int i=n-1;i>=0;i--)
+{
+num=num*10=arr[i];
+}
+return num;
+}
+public static void main(String[] args)
+{
+int arr[];
+Scanner s= new Scanner(System.in);
+System.out.println("enter number of elements");
+
+        int n=s.nextInt();
+
+        int arr[]=new int[n];
+        System.out.println(findMaxNum(arr,n));
+        }
+        }
+        
